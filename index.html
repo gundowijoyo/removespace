@@ -32,6 +32,8 @@
  </div>
  
  </div>
-<script src="sccss/script.js"></script>
+<script>
+class Main{constructor(){this.click=clickButton;this.ipValue=ipText;this.copyPaste=conCopy;this.resultArea=txarea;};clicked(){this.click.addEventListener("click",()=>{this.rsRegug=this.ipValue.value.replace(/\s+/g,"");this.resultArea.value=this.rsRegug;conResult.style.transform="scale(1)";kingResultAndCopy.style.transform="scale(1)";});};copyPas(){this.copyPaste.addEventListener("click",()=>{this.resultArea.select();document.execCommand("copy");alert("tersalin di clipboard🤩");kingResultAndCopy.style.transform="scale(0)";});};};this.resultAny=new Main();this.resultAny.clicked();this.resultAny.copyPas(); 
+</script>
 </body>
   </html>
